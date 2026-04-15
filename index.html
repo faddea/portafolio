@@ -3,189 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fran Smith | Desarrollo Web que Vende</title>
+    <title>Fran Smith | Desarrollador Web</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
-<body class="bg-white text-slate-900 font-sans antialiased selection:bg-blue-100 selection:text-blue-700">
+<body class="bg-[#fcfcfc] text-slate-800 font-sans antialiased">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
-        <div class="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto">
-            <div class="text-xl font-black tracking-tighter text-blue-600">FRAN SMITH</div>
-            <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
-                <a href="#proyectos" class="hover:text-blue-600 transition-colors">Proyectos</a>
-                <a href="#servicios" class="hover:text-blue-600 transition-colors">Servicios</a>
+    <main class="max-w-xl mx-auto px-6 py-12 md:py-20">
+        
+        <header class="flex flex-col items-center text-center mb-16">
+            <div class="relative mb-6">
+                <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-white shadow-xl ring-1 ring-slate-200">
+                    <img src="WhatsApp Image 2026-03-25 at 22.17.39(2).jpeg" alt="Fran Smith" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute bottom-1 right-1 w-5 h-5 bg-green-500 border-4 border-[#fcfcfc] rounded-full"></div>
             </div>
-            <a href="https://wa.me/tunúmero" class="bg-slate-900 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-blue-600 transition-all shadow-md">Cotizar Proyecto</a>
-        </div>
-    </nav>
+            
+            <h1 class="text-3xl font-black tracking-tight text-slate-900 mb-2">Fran Smith</h1>
+            <p class="text-slate-500 font-medium uppercase tracking-widest text-[10px]">Desarrollador de Software</p>
+        </header>
 
-    <section class="relative flex flex-col items-center justify-center text-center px-6 pt-32 pb-20 min-h-screen max-w-5xl mx-auto">
-        <span id="hero-tag" class="opacity-0 mb-4 px-4 py-1.5 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-widest">Disponible para nuevos proyectos</span>
-        
-        <h1 id="hero-title" class="text-5xl md:text-7xl font-black leading-[1.1] tracking-tight opacity-0 text-slate-900">
-            Tu sitio web debería ser tu <span class="text-blue-600 italic">mejor vendedor.</span>
-        </h1>
-        
-        <p id="hero-sub" class="mt-8 text-lg md:text-xl text-slate-500 max-w-2xl opacity-0 leading-relaxed">
-            No solo diseño páginas bonitas. Construyo herramientas digitales de alto rendimiento que <span class="text-slate-900 font-semibold text-balance">convierten visitantes en clientes finales.</span>
-        </p>
+        <section class="mb-12">
+            <p class="text-slate-600 leading-relaxed text-lg">
+                Me enfoco en el desarrollo de soluciones web a medida, priorizando la <span class="font-bold text-slate-900">estabilidad técnica</span> y la <span class="font-bold text-slate-900">usabilidad</span>. Mi objetivo es entregar herramientas digitales que funcionen sin errores y representen profesionalmente a cada institución.
+            </p>
+        </section>
 
-        <div id="hero-cta" class="mt-12 flex flex-col sm:flex-row gap-4 opacity-0">
+        <section class="mb-12">
+            <h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6 flex items-center gap-2">
+                <span class="w-8 h-[1px] bg-slate-200"></span>
+                Proyectos Recientes
+            </h2>
+            
+            <div class="space-y-8">
+                <a href="https://museo-avellaneda.netlify.app/" target="_blank" class="block group">
+                    <article class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm group-hover:shadow-md group-hover:border-slate-300 transition-all">
+                        <img src="/media/p1.png" alt="Museo Institucional" class="w-full h-40 object-cover bg-slate-100 border-b border-slate-50">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-slate-900 text-xl group-hover:text-blue-600 transition-colors">Sitio Institucional Museo</h3>
+                                <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-1 rounded font-bold uppercase tracking-tighter">Educación</span>
+                            </div>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                Desarrollo integral para una institución educativa. Enfoque en la preservación visual de archivos y navegación fluida.
+                            </p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="https://cuentasm.netlify.app/" target="_blank" class="block group">
+                    <article class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm group-hover:shadow-md group-hover:border-slate-300 transition-all">
+                        <img src="/media/p3.png" alt="App Web Híbrida" class="w-full h-40 object-cover bg-slate-100 border-b border-slate-50">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-slate-900 text-xl group-hover:text-blue-600 transition-colors">App Web Multiplataforma</h3>
+                                <span class="text-[9px] bg-purple-50 text-purple-600 px-2 py-1 rounded font-bold uppercase tracking-tighter">Software</span>
+                            </div>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                Aplicación optimizada para escritorio y móviles. Implementación híbrida para distribución en APK y acceso vía navegador.
+                            </p>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4">Especialidad</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-[11px] font-bold">Desarrollo Web</span>
+                <span class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-[11px] font-bold">Apps Híbridas (APK)</span>
+                <span class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-[11px] font-bold">UI/UX</span>
+                <span class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-[11px] font-bold">Automatizaciones</span>
+            </div>
+        </section>
+
+        <div class="sticky bottom-8">
             <a href="https://wa.me/tunúmero" 
-               class="bg-[#25D366] hover:scale-105 text-white px-10 py-5 rounded-2xl font-black text-lg shadow-xl shadow-green-200 transition-all flex items-center justify-center gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm10.334-5.115c.145.099.304.122.476.122 3.003-.001 5.443-2.441 5.443-5.441 0-1.454-.566-2.82-1.592-3.846s-2.393-1.592-3.847-1.592c-3.001 0-5.441 2.44-5.441 5.441 0 .61.121 1.25.412 1.833l-.291 1.063 1.14-.299zm3.504-2.834c-.131-.066-.777-.383-.897-.426-.12-.043-.208-.066-.296.066-.088.131-.34.426-.416.513-.076.088-.152.099-.283.033-.131-.066-.554-.204-1.056-.651-.39-.348-.653-.777-.73-.909-.076-.131-.008-.202.058-.268.059-.059.131-.153.197-.229.066-.076.088-.131.131-.219.043-.088.021-.164-.011-.23-.032-.066-.296-.714-.405-.977-.106-.256-.214-.221-.295-.224l-.252-.003c-.088 0-.23.033-.351.164-.121.131-.461.448-.461 1.093s.471 1.268.536 1.355c.066.088.928 1.417 2.248 1.987.314.135.56.216.751.277.315.1.602.086.83.052.253-.038.777-.317.886-.623.109-.306.109-.569.076-.623-.032-.054-.12-.086-.251-.152z"/></svg>
-                Quiero una web así
+               class="bg-[#1e293b] text-white w-full py-5 rounded-2xl font-bold flex items-center justify-center gap-3 shadow-2xl hover:bg-black active:scale-95 transition-all uppercase tracking-widest text-xs">
+                <span>Consultar por WhatsApp</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
             </a>
-            <a href="#proyectos" class="text-slate-900 px-10 py-5 rounded-2xl font-bold text-lg border border-slate-200 hover:bg-slate-50 transition-all">Ver trabajos</a>
         </div>
-    </section>
 
-    <section class="bg-slate-50 py-12 border-y border-slate-100">
-        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div><p class="text-3xl font-black text-slate-900">100%</p><p class="text-sm text-slate-500 uppercase font-bold">Responsive</p></div>
-            <div><p class="text-3xl font-black text-slate-900">+24ms</p><p class="text-sm text-slate-500 uppercase font-bold">Velocidad Carga</p></div>
-            <div><p class="text-3xl font-black text-slate-900">SEO</p><p class="text-sm text-slate-500 uppercase font-bold">Optimizado</p></div>
-            <div><p class="text-3xl font-black text-slate-900">UX</p><p class="text-sm text-slate-500 uppercase font-bold">Enfocada a Ventas</p></div>
-        </div>
-    </section>
+    </main>
 
-    <section id="proyectos" class="px-6 py-24 max-w-6xl mx-auto">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
-            <div>
-                <h2 class="text-4xl font-black tracking-tight">Proyectos que generan resultados</h2>
-                <p class="text-slate-500 mt-2 text-lg">No solo es código, es el motor de crecimiento de estas marcas.</p>
-            </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class="project-card group opacity-0 cursor-pointer">
-                <div class="overflow-hidden  bg-slate-200 aspect-[4/3] mb-6 shadow-2xl transition-transform group-hover:-translate-y-2">
-                    <img src="/media/lanp.png" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" alt="Ecommerce">
-                </div>
-                <h3 class="text-xl font-bold group-hover:text-blue-600 transition-colors">E-commerce de Alto Impacto</h3>
-                <p class="text-slate-500 mt-2">Aumentamos la tasa de conversión en un 40% mediante UX simplificada.</p>
-            </div>
-
-            <div class="project-card group opacity-0 cursor-pointer">
-                <a href="https://museo-avellaneda.netlify.app/">
-                <div class="overflow-hidden  bg-slate-200 aspect-[4/3] mb-6 shadow-2xl transition-transform group-hover:-translate-y-2">
-                    <img src="/media/p1.png" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" alt="Landing Page">
-                </div>
-                <h3 class="text-xl font-bold group-hover:text-blue-600 transition-colors">Landing Page de Captación</h3>
-                <p class="text-slate-500 mt-2">Diseñada específicamente para campañas de Google Ads y Meta Ads.</p>
-                </a>
-            </div>
-
-            <div class="project-card group opacity-0 cursor-pointer">
-                <div class="overflow-hidden rou bg-slate-200 aspect-[4/3] mb-6 shadow-2xl transition-transform group-hover:-translate-y-2">
-                    <img src="/media/p3.png" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" alt="Logística">
-                </div>
-                <h3 class="text-xl font-bold group-hover:text-blue-600 transition-colors">Plataforma Corporativa</h3>
-                <p class="text-slate-500 mt-2">Digitalización de procesos para una empresa líder en logística.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="servicios" class="bg-slate-900 text-white py-32 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl font-black mb-6">Soluciones Estratégicas</h2>
-                <p class="text-slate-400 max-w-xl mx-auto text-lg">Elijo las mejores tecnologías para que tu única preocupación sea atender a tus nuevos clientes.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="service-item opacity-0 p-8 rounded-3xl border border-white/10 hover:bg-white/5 transition-colors">
-                    <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Landing Pages</h3>
-                    <p class="text-slate-400 leading-relaxed">Páginas de aterrizaje optimizadas para una sola acción: **Vender**. Ideales para lanzamientos y campañas publicitarias.</p>
-                </div>
-
-                <div class="service-item opacity-0 p-8 rounded-3xl border border-white/10 hover:bg-white/5 transition-colors">
-                    <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1"/></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Web Institucional</h3>
-                    <p class="text-slate-400 leading-relaxed">Tu carta de presentación al mundo. Transmití autoridad, confianza y profesionalismo desde el primer segundo.</p>
-                </div>
-
-                <div class="service-item opacity-0 p-8 rounded-3xl border border-white/10 hover:bg-white/5 transition-colors">
-                    <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Mantenimiento</h3>
-                    <p class="text-slate-400 leading-relaxed">Olvidate de los errores técnicos. Me encargo de que tu web vuele y esté siempre actualizada.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="relative overflow-hidden bg-white py-24 px-6">
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tight">¿Hablamos de tu próximo <span class="text-blue-600 italic">gran paso?</span></h2>
-            <p class="text-slate-500 text-xl mb-12 max-w-2xl mx-auto font-medium">Hablemos por WhatsApp. Te asesoro sobre qué necesita tu negocio hoy mismo, sin vueltas.</p>
-            
-            <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <a href="https://wa.me/tunumero" 
-                   class="bg-[#25D366] hover:scale-105 text-white px-12 py-6 rounded-2xl font-black text-xl shadow-2xl shadow-green-200 transition-all flex items-center justify-center gap-3">
-                    Empezar ahora
-                </a>
-            </div>
-            <p class="mt-8 text-slate-400 font-semibold uppercase text-xs tracking-widest italic">Respuesta en menos de 24hs</p>
-        </div>
-    </section>
-
-    <footer class="bg-slate-50 border-t border-slate-100 py-12 px-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:row justify-between items-center gap-6 text-slate-400 font-medium">
-            <p class="text-sm">© 2026 Fran Smith · Desarrollador Web Estratégico</p>
-            <div class="flex gap-6">
-                <a href="#" class="hover:text-blue-600 transition-colors text-sm">LinkedIn</a>
-                <a href="#" class="hover:text-blue-600 transition-colors text-sm">GitHub</a>
-            </div>
-            <p class="text-xs">Ubicado en Santa Fe, Argentina 🇦🇷 para el mundo.</p>
-        </div>
+    <footer class="text-center pb-12 opacity-30 text-[9px] uppercase tracking-[0.2em]">
+        Fran Smith &copy; 2026 — Santa Fe, Arg.
     </footer>
-
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            gsap.registerPlugin(ScrollTrigger);
-            const tl = gsap.timeline();
-            
-            // Hero Animation
-            tl.to("#hero-tag", { opacity: 1, y: -10, duration: 0.6 })
-              .to("#hero-title", { opacity: 1, y: -10, duration: 0.8, ease: "power4.out" }, "-=0.3")
-              .to("#hero-sub", { opacity: 1, y: -10, duration: 0.8 }, "-=0.5")
-              .to("#hero-cta", { opacity: 1, y: -10, duration: 0.8, ease: "back.out(1.7)" }, "-=0.5");
-
-            // Scroll Animations
-            gsap.to(".project-card", {
-                scrollTrigger: {
-                    trigger: "#proyectos",
-                    start: "top 80%",
-                },
-                opacity: 1,
-                y: -30,
-                stagger: 0.2,
-                duration: 1,
-                ease: "power2.out"
-            });
-
-            gsap.to(".service-item", {
-                scrollTrigger: {
-                    trigger: "#servicios",
-                    start: "top 70%",
-                },
-                opacity: 1,
-                y: -20,
-                stagger: 0.2,
-                duration: 0.8,
-                ease: "power2.out"
-            });
-        });
-    </script>
 
 </body>
 </html>
